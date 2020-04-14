@@ -24,5 +24,7 @@ sql = <<-SQL
     hometown TEXT
   )
 
+ActiveRecord::Base.connection.execute(sql)
+
 
 require_relative "../artist.rb"
